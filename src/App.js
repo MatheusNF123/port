@@ -4,7 +4,6 @@ import Home from './components/Home';
 import About from './components/About';
 import Projetos from './components/Projetos';
 import Contato from './components/Contato';
-import BasicExample from './components/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -16,7 +15,6 @@ function App() {
     <About/>
     <Projetos/>
     <Contato/>
-    <BasicExample/>
     </section>
   );
 }

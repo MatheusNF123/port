@@ -109,3 +109,8 @@
   width: 100%;
   margin-right: 10px;
 }
+
+#sobre{
+  /* display: none; */
+  color: rgba(250, 235, 215, 0);
+}

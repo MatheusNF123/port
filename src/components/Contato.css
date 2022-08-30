@@ -1,0 +1,118 @@
+
+
+
+.container-contato{
+  background-color: rgb(32, 32, 32);
+  width: 100%;
+ 
+}
+
+
+.content-contato{
+  min-height: 100vh;
+  padding-top: 90px;
+ 
+  width: 90%;
+  margin: auto;
+}
+
+.content-contato h2{
+  text-align: center;
+  /* margin-top: 10px; */
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.contato{
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+}
+
+.form-contato{
+  width: 30%;
+  background: #212121;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25),
+              -5px -5px 20px rgb(60, 60, 60);
+              padding: 30px;
+              border-radius: 20px;
+}
+.form-contato label{
+  color: rgb(197, 197, 197);
+  font-weight: bold;
+}
+.form-contato input{
+  background-color: #212121;
+  border: 1px solid #c07d3565;
+  padding: 10px;
+  color: rgb(214, 214, 214);
+}
+.form-contato textarea{
+  background-color: #212121;
+  border: 1px solid #c07d3565;
+  color: rgb(214, 214, 214);
+}
+.form-contato textarea:focus, .form-contato input:focus{
+  background-color: #b9b9b9;
+  /* border: 1px solid #c07d3565; */
+  color: rgb(27, 27, 27);
+}
+
+
+.container-meu-contato{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  /* margin-top: 20px; */
+
+}
+
+.meu-contato{
+  width: 250px;
+  height: 170px;
+  /* background-color: blue; */
+  /* border-radius: 20px; */
+  margin-bottom: 25px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 30px;
+  background: #212121;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25),
+              -5px -5px 20px rgb(60, 60, 60);
+              color: rgb(207, 207, 207);
+}
+
+/* IoLogoWhatsapp */
+
+.icons{
+  margin: 10px 0px 12px 0px;
+  font-size: 25px;
+}
+.meu-contato p {
+  margin: 0;
+  padding: 0;
+}
+.nome-rede{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ende-contato{
+  font-size: 12px;
+  color: rgb(136, 136, 136);
+  margin: 3px 0 10px 0 !important;
+}
+.meu-contato a{
+ text-decoration: none;
+}
+
+.button-enviar{
+  background: rgb(208,146,80);
+  background: linear-gradient(164deg, rgba(208,146,80,1) 25%, rgba(211,126,35,1) 69%);
+  
+
+}
