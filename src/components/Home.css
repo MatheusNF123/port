@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 .container-home{
   background: rgb(33,31,32);
   background: linear-gradient(164deg, rgb(19, 18, 19) 38%, rgb(46, 46, 46) 100%);
@@ -17,6 +21,10 @@
   width: 50%;
   flex-direction: column;
   justify-content: center;
+  animation-name: myPort;
+  transform: translate3d(-150px ,0px ,0px);
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
 }
 
 .div-content-img{
@@ -56,7 +64,15 @@
   font-size: 1.2em;
   background: rgb(208,146,80);
   background: linear-gradient(164deg, rgba(208,146,80,1) 25%, rgba(211,126,35,1) 69%);
+  box-shadow: 15px 15px 30px rgb(17, 17, 17), -5px -5px 20px rgb(58, 58, 58);
   border-radius: 30px;
   border: none;
+  color: rgb(241, 241, 241);
+}
+.div-content button:hover{
+  background: rgb(208,146,80);
+  background: linear-gradient(164deg, rgb(207, 142, 72) 25%, rgb(209, 122, 29) 69%);
+  /* color: rgb(233, 232, 232); */
+  transform: scale(1.02);
   color: white;
 }

@@ -1,27 +1,27 @@
 import React from "react";
 import './About.css'
 import Imagens from "../assets/Imagens";
-// import  html from '../assets/html.png'
-// import  css from '../assets/css.png'
-// import  js from '../assets/js.png'
-// import  react from '../assets/react.png'
-// import  nodejs from '../assets/nodejs.png'
-// import  mysql from '../assets/mysql.png'
-// import  bootstrap from '../assets/bootstrap.png'
-// import  docker from '../assets/docker.png'
+import { useContext } from "react";
+import Mycontext from "../Context/MyContext";
+
 
 function About(){
+  const { ativaAnimation, el,} = useContext(Mycontext)
+
+
+
   return(
     <section className="container-about">
-      <span id='sobre'>asdasdas</span>
+       
+      <span id='sobre'>#</span>
       <div className="content-About">      
-        <article className="sobreMim">
+        <article className={`sobreMim ${ativaAnimation}`} ref={el} data-anime='left'>
           <span>Sobre mim</span>
           <h2>Quem Sou eu</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At officiis quod ullam repudiandae fuga dolorum sapiente error minima. Sit tempora suscipit fuga numquam inventore rerum excepturi delectus dignissimos dolores totam!</p>
           <button>Projetos</button>
           </article>
-          <article className="skills">
+          <article className={`skills ${ativaAnimation}`} data-anime='right' ref={el}>
           <span>Habilidades</span>
             <h2>Minhas skills</h2>
             <ul>

@@ -3,6 +3,7 @@ header{
 background: linear-gradient(164deg, rgb(22, 21, 22) 38%, rgb(46, 46, 46) 100%);
 width: 100%;
   position: fixed;
+  z-index: 100;
 }
 
 header .div-content-header{
@@ -22,12 +23,51 @@ header h3{
 
 .listaNavegacao{
   display: flex;
+  
   margin-bottom: 0px !important;
   margin-right: 10px;
+  /* border: 5px solid blue; */
+  width: 600px;
+  justify-content: space-between;
+  height: 75px;
+  align-items: center;
+  opacity: 0;
+  animation-name: links;
+  transform: translate3d(150px ,0px ,0px);
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+  /* transition: 0.3s ease !important; */
+}
+
+@keyframes links {
+  from{
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0px ,0px ,0px);
+    opacity: 1;
+  }
+}
+
+.div-content-header h3{
+  animation-name: myPort;
+  transform: translate3d(-150px ,0px ,0px);
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes myPort {
+  from{
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0px ,0px ,0px);
+    opacity: 1;
+  }
 }
 
 .listaNavegacao li{
-  margin: 0px 30px;
+  /* margin: 0px 30px; */
   list-style: none;
   /* color: white; */
   font-weight: bold;
@@ -37,25 +77,57 @@ header h3{
 }
 
 .listaNavegacao li a{
-  width: 120px;
-  /* border:2px solid blue; */
+  padding: 0px 20px;
   text-decoration: none;
-  /* color: #d38b3d; */
-  color: rgb(214, 214, 214);
+  color: rgb(207, 207, 207);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px;
+  height: 42px;
  
 }
 .listaNavegacao li a:hover{
+  width: fit-content;
+  height: 45px;
+  /* border-radius: 8px; */
+  border-bottom: 3px solid rgba(211,126,35,1);
+  /* background: rgb(208,146,80);
+  background: linear-gradient(164deg, rgba(208,146,80,1) 25%, rgba(211,126,35,1) 69%); */
+
+  color: rgb(214, 214, 214);
+  transform: scale(1.1);
+  
+
+}
+.active{
+  /* width: 120px !important; */
+  width: fit-content;
   border-radius: 8px;
+  border-bottom: none !important;
   background: rgb(208,146,80);
   background: linear-gradient(164deg, rgba(208,146,80,1) 25%, rgba(211,126,35,1) 69%);
-  text-decoration: none;
-  /* padding: 10px; */
-  /* color: #d38b3d; */
+
   color: rgb(214, 214, 214);
-  
-  /* padding: 10px; */
+  height: 42px !important;
+
+}
+
+
+#home{
+  top: 0;
+  position: relative;
+  color: #c9680000;
+}
+
+@media only screen and (max-width: 1024px){
+  .listaNavegacao{
+    position: relative;
+    flex-direction: column;
+    width: 200px;
+    align-items: flex-end;
+    /* margin-top: 30px; */
+  }
+  .listaNavegacao li{
+    margin-bottom: 20px;
+  }
 }

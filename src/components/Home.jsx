@@ -4,8 +4,8 @@ import './Home.css'
 function Home() {
   return(
     <section className="container-home">
+      <span id='home'>#</span>
       <article className="content-all">
-
       <div className="div-content">
         <p>Olá, Meu nome é</p>
         <h1>Matheus Almeida</h1>
@@ -13,7 +13,7 @@ function Home() {
       <button>Saiba mais</button>
       </div>
       <div className="div-content-img">
-        <img src='https://www.pngplay.com/wp-content/uploads/7/Happy-Person-PNG-Images-HD.png' alt="minha foto" />
+        {/* <img src='https://www.pngplay.com/wp-content/uploads/7/Happy-Person-PNG-Images-HD.png' alt="minha foto" /> */}
       </div>
       </article>
     </section>
