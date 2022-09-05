@@ -1,42 +1,43 @@
-header{
+
+
+.header{
   background: rgb(33,31,32);
 background: linear-gradient(164deg, rgb(22, 21, 22) 38%, rgb(46, 46, 46) 100%);
 width: 100%;
   position: fixed;
   z-index: 100;
-}
-
-header .div-content-header{
   display: flex;
-  width: 90%;
-  margin: auto;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 70px;
+  padding: 1rem;
+}
+.header ul{
+  margin: 0;
+  padding: 0;
 }
 
-header h3{
+.header h3{
   color: #d38b3d;
-  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation-name: myPort;
+  transform: translate3d(-150px ,0px ,0px);
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
   margin-bottom: 0px !important;
 }
 
 .listaNavegacao{
   display: flex;
-  
-  margin-bottom: 0px !important;
-  margin-right: 10px;
-  /* border: 5px solid blue; */
-  width: 600px;
-  justify-content: space-between;
-  height: 75px;
-  align-items: center;
+  list-style: none;
+  font-weight: bold;
+  gap: 1rem;
   opacity: 0;
   animation-name: links;
   transform: translate3d(150px ,0px ,0px);
   animation-duration: .3s;
   animation-fill-mode: forwards;
-  /* transition: 0.3s ease !important; */
 }
 
 @keyframes links {
@@ -49,12 +50,7 @@ header h3{
   }
 }
 
-.div-content-header h3{
-  animation-name: myPort;
-  transform: translate3d(-150px ,0px ,0px);
-  animation-duration: .3s;
-  animation-fill-mode: forwards;
-}
+
 
 @keyframes myPort {
   from{
@@ -66,33 +62,19 @@ header h3{
   }
 }
 
-.listaNavegacao li{
-  /* margin: 0px 30px; */
-  list-style: none;
-  /* color: white; */
-  font-weight: bold;
-  
- 
-  
-}
 
-.listaNavegacao li a{
-  padding: 0px 20px;
+
+.listaNavegacao a{
   text-decoration: none;
   color: rgb(207, 207, 207);
-  display: flex;
   justify-content: center;
-  align-items: center;
-  height: 42px;
+  display: block;
+  padding: .5rem;
  
 }
-.listaNavegacao li a:hover{
-  width: fit-content;
-  height: 45px;
-  /* border-radius: 8px; */
+.listaNavegacao a:hover{
+  /* width: fit-content; */
   border-bottom: 3px solid rgba(211,126,35,1);
-  /* background: rgb(208,146,80);
-  background: linear-gradient(164deg, rgba(208,146,80,1) 25%, rgba(211,126,35,1) 69%); */
 
   color: rgb(214, 214, 214);
   transform: scale(1.1);
@@ -108,8 +90,13 @@ header h3{
   background: linear-gradient(164deg, rgba(208,146,80,1) 25%, rgba(211,126,35,1) 69%);
 
   color: rgb(214, 214, 214);
+  text-shadow: 1px 1px 2px black;
   height: 42px !important;
 
+}
+
+.menu-mobile{
+  display: none;
 }
 
 
@@ -119,15 +106,75 @@ header h3{
   color: #c9680000;
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 600px){
+  .menu-mobile{
+    display: flex;
+    background: none;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    gap: .5rem;
+    color: white;
+    font-size: 30px;
+    align-items: center;
+    /* margin-right: 30px; */
+  }
+  .iconeHambur:hover{
+    background-color: rgba(0, 0, 0, 0.158);
+  }
+
+  .spanMenu{
+    font-size: 1.2rem;
+  }
+  
+
   .listaNavegacao{
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 57px;
+    right: -32px !important;
+    background: rgb(33,31,32);
+    background: linear-gradient(-50deg, rgb(22, 21, 22) 38%, rgb(46, 46, 46) 100%);   
+    text-align: center;
+    overflow: hidden;
+    
+  }
+
+
+
+  .menuAtivo .listaNavegacao{
+    display: block;   
+    overflow-y: auto;
+  
+  }
+
+  .listaNavegacao a{
+    /* margin-bottom: 2px; */
+    padding: 1rem 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  }
+  .listaNavegacao a:hover{
+  width: 100%;
+  transform: scale(1.01);
+    
+  }
+  .listaNavegacao .active{
+   text-align: center !important;
+   display: block;
+   width: 100%;  
+   margin: auto;
+   padding-top: 8px;
+  }
+
+  
+  /* .listaNavegacao{
     position: relative;
     flex-direction: column;
     width: 200px;
     align-items: flex-end;
-    /* margin-top: 30px; */
   }
   .listaNavegacao li{
     margin-bottom: 20px;
-  }
+  } */
 }

@@ -16,15 +16,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* #root{
-  background-color: black;
-}
-
-.container-all{
-  width: 90%;
-  margin: auto;
-  background-color: black;
-} */
 
 .divTest{
   display: flex;
