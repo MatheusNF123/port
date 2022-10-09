@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import  'bootstrap/dist/css/bootstrap.min.css' ;
 import './Projetos.css';
 import dataProjetos from '../dataProjetos'
 import Card from './Cards';
+import Mycontext from '../Context/MyContext';
+
 
 function Projetos() {
+  const {elP} = useContext(Mycontext)
 
   return (
-    <section className='container-projeto'>
+    <section className='container-projeto' ref={elP} >
       
       <article className='container-projetos'>
-      {/* <span className='span-projetos'>Projetos</span> */}
       <h3 className='titulo-projetos' id='projetos'>Projetos</h3>
-      <div className='projetos' >
-      {dataProjetos.map((elemento) => <Card img={elemento.img} titulo={elemento.titulo} infos={elemento.infos} />)}
+      <div className='projetos'  >
+      {dataProjetos.map((elemento, index) => <Card key={index} img={elemento.img} titulo={elemento.titulo} infos={elemento.infos} />)}
       </div>
        
       </article>

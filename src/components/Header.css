@@ -18,8 +18,19 @@ width: 100%;
 }
 
 .header h3{
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  animation-name: myPort;
+  transform: translate3d(-150px ,0px ,0px);
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+  margin-bottom: 0px !important;
+  margin-left: 80px;
+}
+.header h3 span{
   color: #d38b3d;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   animation-name: myPort;
   transform: translate3d(-150px ,0px ,0px);
@@ -32,24 +43,12 @@ width: 100%;
   display: flex;
   list-style: none;
   font-weight: bold;
-  gap: 1rem;
-  opacity: 0;
-  animation-name: links;
-  transform: translate3d(150px ,0px ,0px);
-  animation-duration: .3s;
-  animation-fill-mode: forwards;
+  gap: 3rem;
+  opacity: 1;
 }
-
-@keyframes links {
-  from{
-    opacity: 0;
-  }
-  to {
-    transform: translate3d(0px ,0px ,0px);
-    opacity: 1;
-  }
+nav{
+  margin-right: 50px;
 }
-
 
 
 @keyframes myPort {
@@ -73,26 +72,27 @@ width: 100%;
  
 }
 .listaNavegacao a:hover{
-  /* width: fit-content; */
-  border-bottom: 3px solid rgba(211,126,35,1);
-
+  border-bottom: 2px solid rgba(211,126,35,1);
+  border-radius: 8px;
   color: rgb(214, 214, 214);
   transform: scale(1.1);
-  
+  transition: .1s;
 
 }
 .active{
-  /* width: 120px !important; */
-  width: fit-content;
-  border-radius: 8px;
+  border-radius: 1px;
   border-bottom: none !important;
-  background: rgb(208,146,80);
-  background: linear-gradient(164deg, rgba(208,146,80,1) 25%, rgba(211,126,35,1) 69%);
+  color: rgb(208,146,80) !important;
 
-  color: rgb(214, 214, 214);
   text-shadow: 1px 1px 2px black;
   height: 42px !important;
+  transition: .3s;
 
+}
+.active:hover{
+  border-bottom: 2px solid rgb(255, 255, 255) !important;
+  border-radius: 8px;
+  transition: .1s;
 }
 
 .menu-mobile{
@@ -106,21 +106,40 @@ width: 100%;
   color: #c9680000;
 }
 
+@media only screen and (max-width: 900px){
+  .header h3{
+    margin-left: 0;
+  }
+  nav{
+    margin-right: 0px;
+  }
+  .listaNavegacao{    
+    gap: 1rem;
+ 
+  }
+}
+
 @media only screen and (max-width: 600px){
+  .header h3{
+    margin-left: 0;
+  }
+  
   .menu-mobile{
     display: flex;
     background: none;
-    font-size: 1rem;
+    font-size: 0.5rem;
     border: none;
     cursor: pointer;
     gap: .5rem;
     color: white;
     font-size: 30px;
     align-items: center;
-    /* margin-right: 30px; */
   }
   .iconeHambur:hover{
     background-color: rgba(0, 0, 0, 0.158);
+    transform: scale(1.15);
+    border-radius: 10px;
+    transition: .3s;
   }
 
   .spanMenu{
@@ -129,52 +148,46 @@ width: 100%;
   
 
   .listaNavegacao{
-    display: none;
-    position: absolute;
-    width: 200px;
-    top: 57px;
-    right: -32px !important;
+    display: block;
+    visibility: hidden;
+    position: absolute !important;
+    width: 100%;
+    top: 70px;
+    right: 0;
+    height: 0px;
     background: rgb(33,31,32);
-    background: linear-gradient(-50deg, rgb(22, 21, 22) 38%, rgb(46, 46, 46) 100%);   
+    background: linear-gradient(50deg, rgb(22, 21, 22) 38%, rgb(46, 46, 46) 100%);
     text-align: center;
-    overflow: hidden;
-    
+    overflow-y: hidden;
+    transition: .6s;
   }
 
 
 
-  .menuAtivo .listaNavegacao{
-    display: block;   
+  .menuAtivo .listaNavegacao{ 
+    height: 240px;
+    visibility: visible; 
     overflow-y: auto;
-  
+  }
+  .menuAtivo .listaNavegacao::-webkit-scrollbar{ 
+    display: none;
   }
 
   .listaNavegacao a{
-    /* margin-bottom: 2px; */
+    margin-bottom: 2px;
     padding: 1rem 0;
     border-bottom: 2px solid rgba(255, 255, 255, 0.05);
   }
   .listaNavegacao a:hover{
   width: 100%;
-  transform: scale(1.01);
+  transform: scale(1);
     
+  }  
+  .active{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05)!important;
+    color: rgb(208,146,80) !important;
+    height: 56px !important; 
+  transition: .3s;
   }
-  .listaNavegacao .active{
-   text-align: center !important;
-   display: block;
-   width: 100%;  
-   margin: auto;
-   padding-top: 8px;
-  }
-
-  
-  /* .listaNavegacao{
-    position: relative;
-    flex-direction: column;
-    width: 200px;
-    align-items: flex-end;
-  }
-  .listaNavegacao li{
-    margin-bottom: 20px;
-  } */
+ 
 }

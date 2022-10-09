@@ -12,10 +12,10 @@ function Contato() {
 
   return (
     <section className='container-contato'>
-      <div className='content-contato'>
+      <div className='content-contato' ref={elC}>
         <h2 id='contate'>Contate-me</h2>
         <article className='contato'>       
-          <div className={`container-meu-contato ${ativaAnimationContato}`} data-anime='left' ref={elC}>
+          <div className={`container-meu-contato ${ativaAnimationContato && 'animate'}`} data-anime='left' >
             <div className='meu-contato'>
               <HiOutlineMail className='icons'/>
               <p className='nome-rede'>Email</p>
@@ -36,7 +36,7 @@ function Contato() {
               <a href='https://api.whatsapp.com/send?phone=5543996134320' target='_blank' rel="noreferrer">enviar mensagem</a>
             </div>            
           </div>
-          <Form className={`form-contato ${ativaAnimationContato}`} action='https://api.staticforms.xyz/submit' method='POST' ref={elC} data-anime='right'>
+          <Form className={`form-contato ${ativaAnimationContato && 'animate'}`} action='https://api.staticforms.xyz/submit' method='POST' ref={elC} data-anime='right'>
           
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <input type="hidden" name="accessKey" value="3b2ee920-da30-44af-b5bb-1ada5bf4ff5c"/>
