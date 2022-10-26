@@ -1,10 +1,10 @@
 import Form from 'react-bootstrap/Form';
-import './Contato.css'
+import './Contact.css'
 import {IoLogoWhatsapp} from "react-icons/io5";
 import {GrLinkedin} from "react-icons/gr";
 import {HiOutlineMail} from "react-icons/hi";
 import Button from 'react-bootstrap/Button';
-import Mycontext from '../Context/MyContext';
+import Mycontext from '../../Context/MyContext';
 import { useContext } from 'react';
 
 function Contato() {
@@ -36,20 +36,18 @@ function Contato() {
               <a href='https://api.whatsapp.com/send?phone=5543996134320' target='_blank' rel="noreferrer">enviar mensagem</a>
             </div>            
           </div>
-          <Form className={`form-contato ${ativaAnimationContato && 'animate'}`} action='https://api.staticforms.xyz/submit' method='POST' ref={elC} data-anime='right'>
+          <Form className={`form-contato ${ativaAnimationContato && 'animate'}`} action='https://getform.io/f/ff2c1531-e22e-43dc-9948-130331673bf4' encType='multipart/form-data' method='POST' ref={elC} data-anime='right'>
           
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <input type="hidden" name="accessKey" value="3b2ee920-da30-44af-b5bb-1ada5bf4ff5c"/>
               <Form.Label></Form.Label>
               <Form.Control type="text" name='name' placeholder='Nome'/>
             </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3"  controlId="exampleForm.ControlInput1">
               <Form.Label></Form.Label>
-              <Form.Control type="email" placeholder="name@example.com" name='email' />
+              <Form.Control type="email"  placeholder="name@example.com" name='email' />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+            <Form.Group className="mb-3"  controlId="exampleForm.ControlTextarea1">
               <Form.Label></Form.Label>
-              <input type="hidden" name="redirectTo" value="http://localhost:3000/"></input>
               <Form.Control as="textarea" rows={5} name='message' placeholder='Mensagem'/>
             </Form.Group>
               

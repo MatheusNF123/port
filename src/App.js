@@ -1,8 +1,8 @@
 import Header from './components/Header';
-import Home from './components/Home';
-import About from './components/About';
-import Projetos from './components/Projetos';
-import Contato from './components/Contato';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Project from './pages/Projects/Project';
+import Contact from './pages/Contact/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Provider from './Context/Provider';
 
@@ -15,8 +15,8 @@ function App() {
       <Header/>
       <Home/>
       <About/>
-      <Projetos/>
-      <Contato/>
+      <Project/>
+      <Contact/>
       </section>
     </Provider>
   );

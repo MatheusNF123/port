@@ -116,14 +116,11 @@
 }
 
 .button-enviar{
-  background: rgb(208,146,80);
   background: linear-gradient(164deg, rgba(208,146,80,1) 25%, rgba(211,126,35,1) 69%);
   box-shadow: 15px 15px 30px rgba(17, 17, 17, 0.507), -5px -5px 20px rgba(58, 58, 58, 0.671);
 
 }
 .button-enviar:hover{
-  
-  background: rgb(208,146,80);
   background: linear-gradient(164deg, rgb(207, 142, 72) 25%, rgb(209, 122, 29) 69%);
   border: none;
   outline: none;

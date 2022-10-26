@@ -1,8 +1,8 @@
 import React from "react";
 import './About.css'
-import Imagens from "../assets/Imagens";
+import Imagens from "../../assets/Imagens";
 import { useContext } from "react";
-import Mycontext from "../Context/MyContext";
+import Mycontext from "../../Context/MyContext";
 
 
 function About(){
@@ -22,7 +22,7 @@ function About(){
           Meu objetivo é sempre estar me envolvendo em projetos que me façam aprender e crescer.
           E busco oportunidade onde eu possa agregando conhecimento para me tornar um profissional completo, prezando sempre pela empatia e pela colaboração.
           </p>
-          <button>Projetos</button>
+          <a href="#projetos">Projetos</a>
           </article>
           <article className={`skills ${ativaAnimation && 'animate'}`} data-anime='right' ref={el}>
           <span>Habilidades</span>

@@ -1,7 +1,6 @@
 
 
 .header{
-  background: rgb(33,31,32);
 background: linear-gradient(164deg, rgb(22, 21, 22) 38%, rgb(46, 46, 46) 100%);
 width: 100%;
   position: fixed;
@@ -83,11 +82,9 @@ nav{
   border-radius: 1px;
   border-bottom: none !important;
   color: rgb(208,146,80) !important;
-
   text-shadow: 1px 1px 2px black;
   height: 42px !important;
   transition: .3s;
-
 }
 .active:hover{
   border-bottom: 2px solid rgb(255, 255, 255) !important;
@@ -187,7 +184,7 @@ nav{
     border-bottom: 2px solid rgba(255, 255, 255, 0.05)!important;
     color: rgb(208,146,80) !important;
     height: 56px !important; 
-  transition: .3s;
+    transition: .3s;
   }
  
 }
