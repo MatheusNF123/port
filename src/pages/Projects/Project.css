@@ -226,11 +226,47 @@
     width: 360px;
     height: 300px;
   }
+  .infos-button{
+    height: 298px;
+  }
+  /* .cards-projetos{
+    max-width: 30px;
+  } */
 }
-@media only screen and (max-width: 400px){
+
+@media only screen and (max-width: 460px){
+ 
+
+  .cards-projetos{
+    min-width: 320px !important;
+    height: 280px;
+  }
+  .infos-button{
+    height: 278px;
+  }
+
+  .infos-button p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 20px;  
+    max-height: 60px;     
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+  }
+
+  
+  
+}
+/* @media only screen and (max-width: 400px){
  
   .buttons-cards button{
     font-size: 14px;
   }
+
+  .infos-card{
+    max-width: 300px;
+  }
   
-}
+  
+} */
