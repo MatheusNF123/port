@@ -18,9 +18,9 @@ function About(){
         <article className={`sobreMim ${ativaAnimation && 'animate'}`} ref={el} data-anime='left'>
           <span>Sobre mim</span>
           <h2>Quem Sou eu</h2>
-          <p>Oá me chamo Matheus Almeida Saporito, tenho 26 anos, e sou uma pessoa apaixonado pela área da tecnologia. Atualmente estudando desenvolvimento Web, através de cursos, video aulas e  muitos projetos na prática assim venho aprendendo bastante tanto Front-End quanto Back-End.
+          <p>Olá me chamo Matheus Almeida Saporito, tenho 26 anos, e sou uma pessoa apaixonado pela área da tecnologia. Atualmente estudando desenvolvimento Web, através de cursos, video aulas e  muitos projetos na prática assim venho aprendendo bastante tanto Front-End quanto Back-End.
           Meu objetivo é sempre estar me envolvendo em projetos que me façam aprender e crescer.
-          E busco oportunidade onde eu possa agregando conhecimento para me tornar um profissional completo, prezando sempre pela empatia e pela colaboração.
+          E busco oportunidade onde eu possa estar agregando conhecimento para me tornar um profissional completo, prezando sempre pela empatia e pela colaboração.
           </p>
           <a href="#projetos">Projetos</a>
           </article>
