@@ -32,10 +32,15 @@ function About(){
               <li> <Imagens type={'css'} /> CSS</li>
               <li> <Imagens type={'js'} /> Javascript</li>
               <li> <Imagens type={'react'} /> ReactJs</li>
+              <li> <Imagens type={'ts'} /> Typescript</li>
+              <li> <Imagens type={'react'} /> ReactJs</li>
               <li> <Imagens type={'nodejs'} /> NodeJs</li>
-              <li> <Imagens type={'mysql'} /> Docker</li>
-              <li> <Imagens type={'bootstrap'} /> MySQL</li>
-              <li> <Imagens type={'docker'} alt="" /> BootsTrap</li>
+              <li> <Imagens type={'mysql'} /> MySQL</li>
+              <li> <Imagens type={'bootstrap'} /> BootsTrap</li>
+              <li> <Imagens type={'testingLibrary'} /> Testing Library</li>
+              <li> <Imagens type={'jest'} /> Jest</li>
+              <li> <Imagens type={'docker'} /> Docker</li>
+              <li> <Imagens type={'express'} /> Express</li>
             </ul>
           </article>
        
