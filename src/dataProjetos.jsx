@@ -45,6 +45,12 @@ const projetos = [
     infos: 'Uma Api de Sistema de gerenciamento de vendas no formato dropshipping desenvolvida em node-js, utilizando a arquitetura MSC (model-service-controller) e um banco de dados MySQL para gestão de dados.',
     code: 'https://github.com/MatheusNF123/store-manager'
   },
+  {
+    img: storeManager,
+    titulo: 'Store-Manager',
+    infos: 'Uma Api de Sistema de gerenciamento de vendas no formato dropshipping desenvolvida em node-js, utilizando a arquitetura MSC (model-service-controller) e um banco de dados MySQL para gestão de dados.',
+    code: 'https://github.com/MatheusNF123/store-manager'
+  },
 ]
 
 export default projetos
