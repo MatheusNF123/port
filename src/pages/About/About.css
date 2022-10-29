@@ -106,6 +106,8 @@
   flex-wrap: wrap;
   min-height: 300px;
   list-style: none;
+  justify-content: center;
+  align-content: center;
   
 }
 .skills ul li{
@@ -115,6 +117,7 @@
   width: 50px;
   align-items: center;
   margin-top: 10px;
+ 
   
 }
 .skills ul li:hover{
@@ -154,6 +157,7 @@
 }
 
 
+
 @media only screen and (max-width: 1400px){
 
   .content-About{
@@ -179,5 +183,37 @@
     height: auto;
     
   }
+
+  
+}
+
+@media only screen and (max-width: 836px){
+  .skills ul {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .sobreMim{
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  .sobreMim h2{
+    margin-bottom: 20px;
+  }
+
+  .container-about a{
+    margin-bottom: 20px;
+  }
+  .skills{
+    align-items: center;
+  }
+  .skills h2{
+    margin-bottom: 20px;
+  }
+  /* .skills ul{
+    justify-content: center;
+  } */
 }
 
