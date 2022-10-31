@@ -4,6 +4,7 @@ import myTunes from './image/myTunes.png'
 import blogsApi from './image/blogs-api.jpg'
 import trybesmith from './image/trybesmith.jpg'
 import storeManager from './image/store-manager.png'
+import tfc from './image/tfc.png'
 
 const projetos = [
   {
@@ -18,6 +19,12 @@ const projetos = [
     titulo: 'Blogs-Api',
     infos: 'Uma Api API RESTfull na qual simula um site de Blog Nela em que é possível criar, visualizar, deletar e atualizar posts.',
     code: 'https://github.com/MatheusNF123/blogs-api'
+  },
+  {
+    img: tfc,
+    titulo: 'trybe-futebol-clube',
+    infos: 'O TFC é um site informativo sobre partidas e classificações de futebol!',
+    code: 'https://github.com/MatheusNF123/trybe-futebol-clube'
   },
   {
     img: starWars,
