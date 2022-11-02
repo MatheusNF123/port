@@ -5,6 +5,7 @@ import blogsApi from './image/blogs-api.jpg'
 import trybesmith from './image/trybesmith.jpg'
 import storeManager from './image/store-manager.png'
 import tfc from './image/tfc.png'
+import todoList from './image/todoList.png'
 
 const projetos = [
   {
@@ -51,6 +52,13 @@ const projetos = [
     titulo: 'Store-Manager',
     infos: 'Uma Api de Sistema de gerenciamento de vendas no formato dropshipping desenvolvida em node-js, utilizando a arquitetura MSC (model-service-controller) e um banco de dados MySQL para gestão de dados.',
     code: 'https://github.com/MatheusNF123/store-manager'
+  },
+  {
+    img: todoList,
+    titulo: 'my-Todo-List',
+    infos: 'my-Todo-List, uma aplicação onde você podera salvar tarefas do dia dia para não se esquecer. Além disso, poderá remover ou editar uma tarefa, ate adicionar uma descrição.',
+    code: 'https://github.com/MatheusNF123/myTodoList',
+    demo: 'https://my-todo-list-nu-one.vercel.app/',
   },
 
  
