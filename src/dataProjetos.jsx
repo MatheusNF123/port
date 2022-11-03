@@ -5,7 +5,7 @@ import blogsApi from './image/blogs-api.jpg'
 import trybesmith from './image/trybesmith.jpg'
 import storeManager from './image/store-manager.png'
 import tfc from './image/tfc.png'
-import todoList from './image/todoList.png'
+import todoList from './image/todoList2.jpg'
 
 const projetos = [
   {
@@ -41,12 +41,12 @@ const projetos = [
     code: 'https://github.com/MatheusNF123/trybesmith'
   },
   {
-    img: myTunes,
-    titulo: 'My-Tunes',
-    infos: 'Uma aplicação capaz de reproduzir músicas das mais variadas bandas e artistas, criar uma lista de músicas favoritas e editar o perfil da pessoa usuária logada.',
-    demo: 'https://my-tunes-one.vercel.app/',
-    code: 'https://github.com/MatheusNF123/MyTunes'
-  },
+    img: todoList,
+    titulo: 'my-Todo-List',
+    infos: 'my-Todo-List, uma aplicação onde você podera salvar tarefas do dia dia para não se esquecer. Além disso, poderá remover ou editar uma tarefa, ate adicionar uma descrição.',
+    code: 'https://github.com/MatheusNF123/myTodoList',
+    demo: 'https://my-todo-list-nu-one.vercel.app/',
+  }, 
   {
     img: storeManager,
     titulo: 'Store-Manager',
@@ -54,11 +54,11 @@ const projetos = [
     code: 'https://github.com/MatheusNF123/store-manager'
   },
   {
-    img: todoList,
-    titulo: 'my-Todo-List',
-    infos: 'my-Todo-List, uma aplicação onde você podera salvar tarefas do dia dia para não se esquecer. Além disso, poderá remover ou editar uma tarefa, ate adicionar uma descrição.',
-    code: 'https://github.com/MatheusNF123/myTodoList',
-    demo: 'https://my-todo-list-nu-one.vercel.app/',
+    img: myTunes,
+    titulo: 'My-Tunes',
+    infos: 'Uma aplicação capaz de reproduzir músicas das mais variadas bandas e artistas, criar uma lista de músicas favoritas e editar o perfil da pessoa usuária logada.',
+    demo: 'https://my-tunes-one.vercel.app/',
+    code: 'https://github.com/MatheusNF123/MyTunes'
   },
 
  
