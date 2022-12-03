@@ -6,6 +6,7 @@ import trybesmith from './image/trybesmith.jpg'
 import storeManager from './image/store-manager.png'
 import tfc from './image/tfc.png'
 import todoList from './image/todoList2.jpg'
+import car from "./image/car.jpg"
 
 const projetos = [
   {
@@ -59,6 +60,12 @@ const projetos = [
     infos: 'Uma aplicação capaz de reproduzir músicas das mais variadas bandas e artistas, criar uma lista de músicas favoritas e editar o perfil da pessoa usuária logada.',
     demo: 'https://my-tunes-one.vercel.app/',
     code: 'https://github.com/MatheusNF123/MyTunes'
+  },
+  {
+    img: car,
+    titulo: 'Car-Shop',
+    infos: 'Car Shop uma API com CRUD para gerenciar uma concessionária de veículos, utilizando o banco de dados MongoDB através do framework do Mongoose.',
+    code: 'https://github.com/MatheusNF123/car-shop'
   },
 
  
