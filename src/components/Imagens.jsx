@@ -35,5 +35,6 @@ export default function Imagens({type}){
     mui: <img src={mui} alt="imagem Material UI" />,
     python: <img src={python} alt="imagem python" />
   }
+  
   return icones[type]
 }
