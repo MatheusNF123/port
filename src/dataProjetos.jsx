@@ -1,4 +1,4 @@
-import starWars from './image/starWars.png'
+import expressPizzaria from './image/express-pizzaria.png'
 import MyWallet from './image/MyWallet.png'
 import myTunes from './image/myTunes.png'
 import blogsApi from './image/blogs-api.jpg'
@@ -29,11 +29,11 @@ const projetos = [
     code: 'https://github.com/MatheusNF123/trybe-futebol-clube'
   },
   {
-    img: starWars,
-    titulo: 'starWars',
-    infos: 'Projeto que permite realizar vários filtros pelos planetas de Star Wars vindo de uma API externa. Linguagem e tecnologias usadas: React + componente funcional, Hooks, Context API e Jest para testes. ',
-    demo: 'https://star-wars-planets-seven.vercel.app/',
-    code: 'https://github.com/MatheusNF123/star-wars-planets'
+    img: expressPizzaria,
+    titulo: 'express-pizzaria',
+    infos: 'Este é um projeto fullstack de uma pizzaria fictícia que tem como objetivo possibilitar a realização de pedidos online de pizzas. ',
+    demo: 'https://express-pizzaria-three.vercel.app/',
+    code: 'https://github.com/MatheusNF123/express-pizzaria'
   },
   {
     img: trybesmith,

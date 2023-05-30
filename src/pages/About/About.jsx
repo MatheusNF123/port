@@ -1,6 +1,6 @@
 import React from "react";
 import './About.css'
-import Imagens from "../../assets/Imagens";
+import Imagens from "../../components/Imagens";
 import { useContext } from "react";
 import Mycontext from "../../Context/MyContext";
 
@@ -41,6 +41,9 @@ function About(){
               <li> <Imagens type={'jest'} /> Jest</li>
               <li> <Imagens type={'docker'} /> Docker</li>
               <li> <Imagens type={'express'} /> Express</li>
+              <li> <Imagens type={'styledComponents'} /> Styled Components</li>
+              <li> <Imagens type={'mui'} /> Material UI</li>
+              <li> <Imagens type={'python'} /> Python</li>
             </ul>
           </article>
        
